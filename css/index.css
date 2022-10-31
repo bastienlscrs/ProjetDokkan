@@ -1,0 +1,848 @@
+@import url(https://fonts.googleapis.com/css2?family=Goldman&display=swap);
+/* ----------------------------------------------------------------------------------------------------------- */
+
+html * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Goldman;
+}
+
+body {
+    background-color: black;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+#Piccolo-wlp {
+    display: flex;
+    justify-content: space-around;
+}
+
+aside img {
+    width: "100%";
+    height: "35%"
+}
+/* Media Ordinateur
+----------------------------------------------------------------------------------------------------------- 
+----------------------------------------------------------------------------------------------------------- 
+*/
+
+@media (min-width:1400px) {
+    header {
+        height: 90px;
+        width: 100%;
+        background-color: rgb(51, 51, 51);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        font-family: Goldman;
+    }
+    header>a {
+        margin-right: 80px;
+        color: white;
+        text-decoration: none;
+    }
+    header>a {
+        background-image: linear-gradient( to right, rgb(235, 14, 255), rgb(128, 0, 117) 50%, #ffff 50%);
+        background-size: 200% 100%;
+        background-position: -100%;
+        display: inline-block;
+        padding: 5px 0;
+        position: relative;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: all 0.3s ease-in-out;
+    }
+    header>a:before {
+        content: '';
+        background: rgb(255, 255, 255);
+        display: block;
+        position: absolute;
+        bottom: -3px;
+        left: 0;
+        width: 0;
+        height: 3px;
+        transition: all 0.3s ease-in-out;
+    }
+    header>a:hover {
+        background-position: 0;
+    }
+    header>a:hover::before {
+        width: 100%;
+    }
+    /* sonuko ------------------------------------------------------------------------------------------------- */
+    section>nav {
+        width: 25%;
+        color: white;
+        font-size: x-large;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    #Vegeta-box {
+        width: 860px;
+        height: 506px;
+        box-shadow: 0px 4px 30px 12px #0084ff;
+        border-radius: 71px;
+        margin: auto;
+        color: white;
+    }
+    #Vegeta-wlp {
+        width: 100%;
+        height: 90vh;
+        display: flex;
+    }
+    #VegetaImg {
+        width: 250px;
+        filter: drop-shadow(0px 4px 30px#0084ff);
+        transform: matrix(-1, 0, 0, 1, 0, 0);
+    }
+    /* -------------------------------------------------------------------------------------------------------------------------------- */
+    section>div>section>p {
+        margin-top: 75px;
+        margin-left: 60px;
+        font-size: 24px;
+    }
+    section>div>section {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+    section>aside {
+        color: white;
+        font-size: x-large;
+        float: right;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 25%;
+    }
+    section>nav>p {
+        margin: 100px;
+        font-size: 15px;
+    }
+    /* Zenitsu ---------------------------------------------------------------------------------------------------- */
+    #Piccolo-wlp {
+        width: 100%;
+        height: 90vh;
+        display: flex;
+        justify-content: space-around;
+        /* margin-left: 3em; */
+    }
+    #PiccoloImg {
+        width: 250px;
+        filter: drop-shadow(0px 4px 55px #00c711);
+        transform: matrix(-1, 0, 0, 1, 0, 0);
+    }
+    #Piccolo-box {
+        width: 860px;
+        height: 506px;
+        box-shadow: 0px 4px 55px 12px #00c711;
+        border-radius: 71px;
+        margin: auto;
+        color: white;
+    }
+    main>#Piccolo-wlp>aside {
+        align-self: center;
+        width: 40%;
+    }
+    /* Footer --------------------------------------------------------------------------------------------- */
+    footer {
+        background-color: rgb(51, 51, 51);
+        height: 90px;
+        display: flex;
+        justify-content: space-evenly;
+        color: white;
+        align-items: center;
+    }
+    footer>a {
+        color: white;
+        text-decoration: none;
+    }
+}
+/* Media Tablette
+----------------------------------------------------------------------------------------------------------- 
+----------------------------------------------------------------------------------------------------------- 
+*/
+
+@media (max-width:1400px) and (min-width:1304px) {
+    header {
+        height: 90px;
+        width: 100%;
+        background-color: rgb(51, 51, 51);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        font-family: Goldman;
+    }
+    header>a {
+        margin-right: 40px;
+        color: white;
+        text-decoration: none;
+    }
+    header>a {
+        background-image: linear-gradient( to right, rgb(235, 14, 255), rgb(128, 0, 117) 50%, #ffff 50%);
+        background-size: 200% 100%;
+        background-position: -100%;
+        display: inline-block;
+        padding: 5px 0;
+        position: relative;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: all 0.3s ease-in-out;
+    }
+    header>a:before {
+        content: '';
+        background: rgb(255, 255, 255);
+        display: block;
+        position: absolute;
+        bottom: -3px;
+        left: 0;
+        width: 0;
+        height: 3px;
+        transition: all 0.3s ease-in-out;
+    }
+    header>a:hover {
+        background-position: 0;
+    }
+    header>a:hover::before {
+        width: 100%;
+    }
+    /* sonuko ------------------------------------------------------------------------------------------------- */
+    section>nav {
+        width: 25%;
+        color: white;
+        font-size: x-large;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    #Vegeta-box {
+        width: 860px;
+        height: 506px;
+        box-shadow: 0px 4px 55px 12px #F1A3BD;
+        border-radius: 71px;
+        margin: auto;
+        color: white;
+    }
+    #Vegeta-wlp {
+        width: 100%;
+        height: 90vh;
+        display: flex;
+    }
+    #VegetaImg {
+        width: 250px;
+        filter: drop-shadow(0px 0px 30px #ff8a1c);
+        transform: matrix(-1, 0, 0, 1, 0, 0);
+    }
+    /* -------------------------------------------------------------------------------------------------------------------------------- */
+    section>div>section>p {
+        margin-top: 75px;
+        margin-left: 60px;
+        font-size: 24px;
+    }
+    section>div>section {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+    section>aside {
+        color: white;
+        font-size: x-large;
+        float: right;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 25%;
+    }
+    section>nav>p {
+        margin: 100px;
+        font-size: 15px;
+    }
+    /* Zenitsu ---------------------------------------------------------------------------------------------------- */
+    #Piccolo-wlp {
+        width: 100%;
+        height: 90vh;
+        display: flex;
+        justify-content: space-around;
+        margin-left: 2em;
+    }
+    #PiccoloImg {
+        width: 250px;
+        filter: drop-shadow(0px 0px 30px #ff8a1c);
+        transform: matrix(-1, 0, 0, 1, 0, 0);
+    }
+    #Piccolo-box {
+        width: 860px;
+        height: 506px;
+        box-shadow: 0px 4px 55px 12px #F59A43;
+        border-radius: 71px;
+        margin: auto;
+        color: white;
+    }
+    main>#Piccolo-wlp>aside {
+        align-self: center;
+        width: 40%;
+    }
+    /* Footer --------------------------------------------------------------------------------------------- */
+    footer {
+        background-color: rgb(51, 51, 51);
+        height: 90px;
+        display: flex;
+        justify-content: space-evenly;
+        color: white;
+        align-items: center;
+    }
+    footer>a {
+        color: white;
+        text-decoration: none;
+    }
+}
+
+@media (max-width:1304px) and (min-width: 1000px) {
+    header {
+        height: 90px;
+        width: 100%;
+        background-color: rgb(51, 51, 51);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        font-family: Goldman;
+    }
+    header>a {
+        margin-right: 40px;
+        color: white;
+        text-decoration: none;
+    }
+    header>a {
+        background-image: linear-gradient( to right, rgb(235, 14, 255), rgb(128, 0, 117) 50%, #ffff 50%);
+        background-size: 200% 100%;
+        background-position: -100%;
+        display: inline-block;
+        padding: 5px 0;
+        position: relative;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: all 0.3s ease-in-out;
+    }
+    header>a:before {
+        content: '';
+        background: rgb(255, 255, 255);
+        display: block;
+        position: absolute;
+        bottom: -3px;
+        left: 0;
+        width: 0;
+        height: 3px;
+        transition: all 0.3s ease-in-out;
+    }
+    header>a:hover {
+        background-position: 0;
+    }
+    header>a:hover::before {
+        width: 100%;
+    }
+    /* sonuko ------------------------------------------------------------------------------------------------- */
+    section>nav {
+        width: 25%;
+        color: white;
+        font-size: x-large;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    #Vegeta-box {
+        width: 800px;
+        height: 506px;
+        box-shadow: 0px 4px 55px 12px #F1A3BD;
+        border-radius: 71px;
+        margin: auto;
+        color: white;
+    }
+    #Vegeta-wlp {
+        width: 100%;
+        height: 90vh;
+        display: flex;
+    }
+    #VegetaImg {
+        width: 250px;
+        filter: drop-shadow(0px 0px 30px #ff8a1c);
+        transform: matrix(-1, 0, 0, 1, 0, 0);
+    }
+    section>aside {
+        display: none;
+    }
+    section>nav {
+        display: none;
+    }
+    /* -------------------------------------------------------------------------------------------------------------------------------- */
+    section>div>section>p {
+        margin-top: 75px;
+        margin-left: 60px;
+        font-size: 24px;
+    }
+    section>div>section {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+    section>aside {
+        color: white;
+        font-size: x-large;
+        float: right;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 25%;
+    }
+    section>nav>p {
+        margin: 100px;
+        font-size: 15px;
+    }
+    /* Zenitsu ---------------------------------------------------------------------------------------------------- */
+    #Piccolo-wlp {
+        width: 100%;
+        height: 90vh;
+        display: flex;
+        justify-content: space-around;
+        margin-left: 5em;
+    }
+    #PiccoloImg {
+        width: 250px;
+        filter: drop-shadow(0px 0px 30px #ff8a1c);
+        transform: matrix(-1, 0, 0, 1, 0, 0);
+    }
+    #Piccolo-box {
+        width: 860px;
+        height: 506px;
+        box-shadow: 0px 4px 55px 12px #F59A43;
+        border-radius: 71px;
+        margin: auto;
+        color: white;
+    }
+    main>#Piccolo-wlp>aside {
+        align-self: center;
+        width: 40%;
+    }
+    /* Footer --------------------------------------------------------------------------------------------- */
+    footer {
+        background-color: rgb(51, 51, 51);
+        height: 90px;
+        display: flex;
+        justify-content: space-evenly;
+        color: white;
+        align-items: center;
+    }
+    footer>a {
+        color: white;
+        text-decoration: none;
+    }
+}
+
+@media (max-width:1100px) and (min-width: 900px) {
+    body {
+        overflow-x: hidden;
+        width: 105vw;
+    }
+    header {
+        height: 90px;
+        width: 100%;
+        background-color: rgb(51, 51, 51);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        font-family: Goldman;
+    }
+    header>a {
+        flex-wrap: nowrap;
+        margin-right: 30px;
+        color: white;
+        text-decoration: none;
+    }
+    header>a {
+        background-image: linear-gradient( to right, rgb(235, 14, 255), rgb(128, 0, 117) 50%, #ffff 50%);
+        background-size: 200% 100%;
+        background-position: -100%;
+        display: inline-block;
+        padding: 5px 0;
+        position: relative;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: all 0.3s ease-in-out;
+    }
+    header>a:before {
+        content: '';
+        background: rgb(255, 255, 255);
+        display: block;
+        position: absolute;
+        bottom: -3px;
+        left: 0;
+        width: 0;
+        height: 3px;
+        transition: all 0.3s ease-in-out;
+    }
+    header>a:hover {
+        background-position: 0;
+    }
+    header>a:hover::before {
+        width: 100%;
+    }
+    /* sonuko ------------------------------------------------------------------------------------------------- */
+    section>nav {
+        width: 25%;
+        color: white;
+        font-size: x-large;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    #Vegeta-box {
+        width: 800px;
+        height: 506px;
+        box-shadow: 0px 4px 55px 12px #F1A3BD;
+        border-radius: 71px;
+        margin: auto;
+        color: white;
+    }
+    #Vegeta-wlp {
+        width: 100%;
+        height: 90vh;
+        display: flex;
+    }
+    #VegetaImg {
+        width: 250px;
+        filter: drop-shadow(0px 0px 30px #ff8a1c);
+        transform: matrix(-1, 0, 0, 1, 0, 0);
+    }
+    section>aside {
+        display: none;
+    }
+    section>nav {
+        display: none;
+    }
+    /* -------------------------------------------------------------------------------------------------------------------------------- */
+    section>div>section>p {
+        margin-top: 75px;
+        margin-left: 60px;
+        font-size: 24px;
+    }
+    section>div>section {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+    section>aside {
+        display: none;
+    }
+    section>nav>p {
+        margin: 100px;
+        font-size: 15px;
+    }
+    /* Zenitsu ---------------------------------------------------------------------------------------------------- */
+    #Piccolo-wlp {
+        width: 100%;
+        height: 90vh;
+        display: flex;
+        justify-content: space-around;
+        margin-left: 3em;
+    }
+    #PiccoloImg {
+        width: 250px;
+        filter: drop-shadow(0px 0px 30px #ff8a1c);
+        transform: matrix(-1, 0, 0, 1, 0, 0);
+    }
+    #Piccolo-box {
+        width: 860px;
+        height: 506px;
+        box-shadow: 0px 4px 55px 12px #F59A43;
+        border-radius: 71px;
+        margin: auto;
+        color: white;
+    }
+    main>#Piccolo-wlp>aside {
+        align-self: center;
+        width: 40%;
+    }
+    /* Footer --------------------------------------------------------------------------------------------- */
+    footer {
+        background-color: rgb(51, 51, 51);
+        height: 90px;
+        display: flex;
+        justify-content: space-evenly;
+        color: white;
+        align-items: center;
+    }
+    footer>a {
+        color: white;
+        text-decoration: none;
+    }
+}
+/* __________________________________________________________________________________________________________________________________________________________ */
+/* Media Smartphone
+----------------------------------------------------------------------------------------------------------- 
+----------------------------------------------------------------------------------------------------------- 
+*/
+
+@media (max-width: 800px) {
+    section {
+        margin-bottom: 10px;
+    }
+    main {
+        font-size: 15px;
+    }
+    header {
+        height: 90px;
+        width: 100%;
+        background-color: rgb(51, 51, 51);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        font-family: Goldman;
+    }
+    header>a {
+        flex-wrap: nowrap;
+        margin-right: 30px;
+        color: white;
+        text-decoration: none;
+    }
+    header>a {
+        background-image: linear-gradient( to right, rgb(235, 14, 255), rgb(128, 0, 117) 50%, #ffff 50%);
+        background-size: 200% 100%;
+        background-position: -100%;
+        display: inline-block;
+        padding: 5px 0;
+        position: relative;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: all 0.3s ease-in-out;
+    }
+    header>a:before {
+        content: '';
+        background: rgb(255, 255, 255);
+        display: block;
+        position: absolute;
+        bottom: -3px;
+        left: 0;
+        width: 0;
+        height: 3px;
+        transition: all 0.3s ease-in-out;
+    }
+    header>a:hover {
+        background-position: 0;
+    }
+    header>a:hover::before {
+        width: 100%;
+    }
+    /* sonuko ------------------------------------------------------------------------------------------------- */
+    #Vegeta-box {
+        box-shadow: 0px 4px 55px 12px #F1A3BD;
+        width: 90%;
+        height: 80%;
+        border-radius: 71px;
+        color: white;
+        justify-content: space-around;
+        background-color: rgb(51, 51, 51);
+        display: flex;
+        align-items: center;
+        margin: auto;
+        margin-top: 10%;
+    }
+    #Vegeta-wlp {
+        height: 60vh;
+    }
+    #VegetaImg {
+        width: 250px;
+        filter: drop-shadow(0px 0px 30px #ff8a1c);
+        transform: matrix(-1, 0, 0, 1, 0, 0);
+    }
+    #Vegeta-wlp>div>section>p {
+        margin: auto;
+        margin: 50px;
+        margin-top: 72px;
+        font-size: 20px;
+    }
+    /* -------------------------------------------------------------------------------------------------------------------------------- */
+    section>aside {
+        display: none;
+    }
+    section>nav {
+        display: none;
+    }
+    /* Zenitsu ---------------------------------------------------------------------------------------------------- */
+    #Piccolo-wlp>div>section>p {
+        margin: auto;
+        margin: 50px;
+        margin-top: 62px;
+        font-size: 19px;
+    }
+    #Piccolo-wlp {
+        width: 100%;
+        height: 60vh;
+    }
+    #PiccoloImg {
+        display: none;
+    }
+    #Piccolo-box {
+        width: 90%;
+        height: 70%;
+        height: max-content;
+        box-shadow: 0px 4px 55px 12px #F59A43;
+        border-radius: 71px;
+        margin: auto;
+        color: white;
+        background-color: rgb(51, 51, 51);
+        display: flex;
+        align-items: center;
+        margin: auto;
+        margin-top: 10%;
+    }
+    /* Footer --------------------------------------------------------------------------------------------- */
+    footer {
+        background-color: rgb(51, 51, 51);
+        height: 90px;
+        display: flex;
+        justify-content: space-evenly;
+        color: white;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    footer>a {
+        color: white;
+        text-decoration: none;
+    }
+}
+
+@media (max-width:900px) and (min-width:800px) {
+    header {
+        height: 90px;
+        width: 100%;
+        background-color: rgb(51, 51, 51);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        font-family: Goldman;
+    }
+    header>a {
+        flex-wrap: nowrap;
+        color: white;
+        text-decoration: none;
+    }
+    header>a {
+        background-image: linear-gradient( to right, rgb(235, 14, 255), rgb(128, 0, 117) 50%, #ffff 50%);
+        background-size: 200% 100%;
+        background-position: -100%;
+        display: inline-block;
+        padding: 5px 0;
+        position: relative;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: all 0.3s ease-in-out;
+    }
+    header>a:before {
+        content: '';
+        background: rgb(255, 255, 255);
+        display: block;
+        position: absolute;
+        bottom: -3px;
+        left: 0;
+        width: 0;
+        height: 3px;
+        transition: all 0.3s ease-in-out;
+    }
+    header>a:hover {
+        background-position: 0;
+    }
+    header>a:hover::before {
+        width: 100%;
+    }
+    /* sonuko ------------------------------------------------------------------------------------------------- */
+    #Vegeta-box {
+        box-shadow: 0px 4px 55px 12px #F1A3BD;
+        width: 90%;
+        height: 70%;
+        border-radius: 71px;
+        color: white;
+        justify-content: space-around;
+        background-color: rgb(51, 51, 51);
+        display: flex;
+        align-items: center;
+        margin: auto;
+        margin-top: 10%;
+    }
+    #Vegeta-wlp {
+        height: 60vh;
+    }
+    #VegetaImg {
+        width: 250px;
+        filter: drop-shadow(0px 0px 30px #ff8a1c);
+        transform: matrix(-1, 0, 0, 1, 0, 0);
+    }
+    #Vegeta-wlp>div>section>p {
+        margin: auto;
+        margin: 50px;
+        margin-top: 72px;
+        font-size: 20px;
+    }
+    /* -------------------------------------------------------------------------------------------------------------------------------- */
+    section>aside {
+        display: none;
+    }
+    section>nav {
+        display: none;
+    }
+    /* Zenitsu ---------------------------------------------------------------------------------------------------- */
+    #Piccolo-wlp>div>section>p {
+        margin: auto;
+        margin: 50px;
+        margin-top: 62px;
+        font-size: 19px;
+    }
+    #Piccolo-wlp {
+        width: 100%;
+        height: 60vh;
+        margin: 0px;
+    }
+    #PiccoloImg {
+        display: none;
+    }
+    #Piccolo-box {
+        width: 90%;
+        height: 70%;
+        height: max-content;
+        box-shadow: 0px 4px 55px 12px #F59A43;
+        border-radius: 71px;
+        margin: auto;
+        color: white;
+        background-color: rgb(51, 51, 51);
+        display: flex;
+        align-items: center;
+        margin: auto;
+        margin-top: 5%;
+    }
+    /* Footer --------------------------------------------------------------------------------------------- */
+    footer {
+        background-color: rgb(51, 51, 51);
+        height: 90px;
+        display: flex;
+        justify-content: space-evenly;
+        color: white;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    footer>a {
+        color: white;
+        text-decoration: none;
+    }
+}
